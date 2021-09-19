@@ -18,13 +18,28 @@ isWorking: true;
 let hobbies: string[];
 hobbies = ["sketching", "singing"];
 
-let person: { name: string; age: number };
+//type Aliases
+
+type Person ={
+    name:string,
+    age:number
+}
+
+let person: Person
 person = {
   name: "Ankit",
   age: 25,
 };
 
-let people: {
-    name: string,
-    age: number,
-}[];
+let people: Person[];
+
+//Type Inference
+
+let course = 'React - The Complete Guide';
+
+
+// Union Type
+
+let courseDetail : string | number = 'React'
+courseDetail =12314;
+
