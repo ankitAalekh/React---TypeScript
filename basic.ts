@@ -43,3 +43,37 @@ let course = 'React - The Complete Guide';
 let courseDetail : string | number = 'React'
 courseDetail =12314;
 
+//Functions and Types
+
+function add(a:number,b:number){
+    return a+b;
+}
+
+function print(value:any){
+    console.log(value);
+}
+
+
+//Generics
+
+// function insertAtBeginning(array:any[], value:any){
+//     const newArray = [value, ...array];
+//     return newArray;
+// }
+
+// const demoArray = [1,2,3]
+// const updatedArray = insertAtBeginning(demoArray,-1)
+
+// updatedArray[0].split('');
+
+// Generics
+
+function insertAtBeginning<T>(array:T[], value:T){
+        const newArray = [value, ...array];
+        return newArray;
+    }
+    
+    const demoArray = [1,2,3]
+    const updatedArray = insertAtBeginning(demoArray,-1)
+  const stringArray = insertAtBeginning(['a','b'],'d')  
+    // updatedArray[0].split('');
